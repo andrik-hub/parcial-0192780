@@ -81,3 +81,67 @@ a {
   margin-top: auto;
   gap: 22px;
 }
+
+.content {
+  position: relative;
+  padding: 36px 48px 28px;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    linear-gradient(90deg, rgba(8, 20, 28, 0.85) 0%, rgba(8, 20, 28, 0.2) 65%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(5, 12, 18, 0.9) 100%),
+    url("../assets/hero.jpg") center / cover no-repeat,
+    linear-gradient(135deg, #1b6a82, #0d3446 60%, #08202c);
+}
+
+.back {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 460px;
+}
+
+.title {
+  font-family: var(--fuente-titulo);
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.synopsis {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 430px;
+  margin-bottom: 26px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 26px;
+}
+
+.stars {
+  color: #f5c518;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.stars .off {
+  color: #8c8c8c;
+}
+
+.rating-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
