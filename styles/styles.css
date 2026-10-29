@@ -1,0 +1,32 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #e53a2e;
+  --fondo: #101418;
+  --blanco: #ffffff;
+  --gris: #8a8f94;
+  --fuente-texto: "Inter", Arial, sans-serif;
+  --fuente-titulo: "Bebas Neue", Impact, sans-serif;
+  --fuente-logo: "Creepster", cursive;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background: #1a1f24;
+  color: var(--blanco);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
