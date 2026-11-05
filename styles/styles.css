@@ -1,0 +1,245 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #e53a2e;
+  --fondo: #101418;
+  --blanco: #ffffff;
+  --gris: #8a8f94;
+  --fuente-texto: "Inter", Arial, sans-serif;
+  --fuente-titulo: "Bebas Neue", Impact, sans-serif;
+  --fuente-logo: "Creepster", cursive;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background: #1a1f24;
+  color: var(--blanco);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 680px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--fondo);
+}
+
+
+.sidebar {
+  background: #12171b;
+  padding: 56px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--fuente-logo);
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: var(--rojo);
+  letter-spacing: 1px;
+  margin-bottom: 56px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  font-size: 0.95rem;
+}
+
+.menu a {
+  transition: color 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: var(--rojo);
+}
+
+.menu-bottom {
+  margin-top: auto;
+  gap: 22px;
+}
+
+.content {
+  position: relative;
+  padding: 36px 48px 28px;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    linear-gradient(90deg, rgba(8, 20, 28, 0.85) 0%, rgba(8, 20, 28, 0.2) 65%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(5, 12, 18, 0.9) 100%),
+    url("../assets/hero.jpg") center / cover no-repeat,
+    linear-gradient(135deg, #1b6a82, #0d3446 60%, #08202c);
+}
+
+.back {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+
+.hero {
+  max-width: 460px;
+}
+
+.title {
+  font-family: var(--fuente-titulo);
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.synopsis {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 430px;
+  margin-bottom: 26px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 26px;
+}
+
+.stars {
+  color: #f5c518;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.stars .off {
+  color: #8c8c8c;
+}
+
+.rating-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.actions {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: filter 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(1.15);
+}
+
+.btn-play {
+  background: var(--rojo);
+}
+
+.play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blanco);
+  color: var(--rojo);
+  font-size: 0.6rem;
+  padding-left: 2px;
+}
+
+.btn-trailer {
+  background: rgba(140, 140, 140, 0.75);
+  color: #e8e8e8;
+}
+.episodes {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.seasons-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.seasons-btns button {
+  background: none;
+  border: none;
+  color: var(--blanco); 
+  font-family: var(--fuente-texto);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.seasons-btns button:hover {
+  color: var(--rojo); 
+}
+.episode-list {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.episode {
+  flex: 1; 
+  min-width: 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.episode p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--blanco);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
