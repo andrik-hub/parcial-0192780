@@ -69,10 +69,13 @@ a {
 }
 
 .menu a {
-  transition: color 0.2s;
+  color: var(--blanco); 
+  transition: color 0.2s ease;
 }
 
-.menu a:hover,
+.menu a:hover {
+  color: var(--rojo);
+}
 .menu a.active {
   color: var(--rojo);
 }
